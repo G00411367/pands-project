@@ -21,7 +21,7 @@ The code will output:
 3. Scatter plot of each pair of variables
 4. Performs other appropriate analysis
 
-## Reserch
+## Research
 A CSV file of the Iris data set was downloaded from UCI Machine Learning repository
 
 Data set contains 150 records under 5 atributes: Sepal Length, Sepal Width, Petal Length, Petal width and Species
@@ -42,3 +42,6 @@ Various analisys were performed and developed in order to distinquish between sp
 (https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
 
 (https://m.youtube.com/watch?v=02BFXhPQWHQ)
+
+(https://m.youtube.com/watch?v=8yXpWGRBXjE)
+

@@ -6,8 +6,15 @@
 
 # Author: Ioan Domsa
 
-# import relevand modules
-import os 
-import numpy as np
-import matplotlib as plt
+# import all necessary modules
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+
+# load the data set
+df = pd.read_csv("irisdata.csv")
+df.head()
+# print (df.head()) test the file
+
+

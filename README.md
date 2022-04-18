@@ -21,6 +21,15 @@ The code will output:
 3. Scatter plot of each pair of variables
 4. Performs other appropriate analysis
 
+## The Code analysis.py
+
+- The script will load data from cvs file specified with path and name
+- After viewing the initial dataframe of the file, some data manipulation will be applied:
+    - File doesn't have a header
+    - Add names for columns & check dataframe shape. It is as expected 150 rows & 5 colums
+    - Check the number of entries for each variety. Result shows same number for each specie, 50
+- Create data frames for each variety 
+
 ## Research
 A CSV file of the Iris data set was downloaded from UCI Machine Learning repository
 

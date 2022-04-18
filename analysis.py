@@ -6,15 +6,32 @@
 
 # Author: Ioan Domsa
 
-# import all necessary modules
+# import necessary modules
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import numpy as np
+# import numpy as np
 
-# load the data set
-df = pd.read_csv("irisdata.csv")
-df.head()
-# print (df.head()) test the file
+# specify file path
+datapath = './data/'
+irisfile = datapath + 'iris.data.csv'
+# dataframe, loading data.The file doesn't have a header, so header=None
+df = pd.read_csv(irisfile, header=None)
+# add names for columns
+df.columns = ['sepallength', 'sepalwidth', 'petallength', 'petalwidth', 'variety']
+# test file loading
+print (df.head()) 
+# check file shape, number of rows and columns
+print(df.shape) 
+# counts number of each veriety 
+print(df['variety'].value_counts())
+
+# create dadaframes for each of variety and print to check resluts
+setosa = df.loc[df['variety'] == 'Iris-setosa']
+print(setosa)
+versicolor = df.loc[df['variety'] == 'Iris-versicolor']
+print(versicolor)
+virginica = df.loc[df['variety'] == 'Iris-virginica']
+print(virginica)
 
 

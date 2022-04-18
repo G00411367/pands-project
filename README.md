@@ -21,14 +21,18 @@ The code will output:
 3. Scatter plot of each pair of variables
 4. Performs other appropriate analysis
 
-## The Code analysis.py
+## The Code: analysis.py
 
-- The script will load data from cvs file specified with path and name
-- After viewing the initial dataframe of the file, some data manipulation will be applied:
-    - File doesn't have a header
-    - Add names for columns & check dataframe shape. It is as expected 150 rows & 5 colums
-    - Check the number of entries for each variety. Result shows same number for each specie, 50
-- Create data frames for each variety 
+- Load data from cvs file which is specified with path & name
+- Manipulation of data set  
+    - After viewing the initial dataframe of the file, some data manipulation will be applied:
+        - File doesn't have a header
+        - Add names for columns & check dataframe shape. It is as expected 150 rows & 5 colums
+        - Check the number of entries for each variety. Result shows same number for each specie, 50
+    - We check this to understand the data set is ballanced 
+- Perform a statistical summary of the data set & output it to a file
+    - Pandas describe() function shows counts, mean, standard deviation, min, max, etc
+    - Check against missing values o the data set by using isnull() function
 
 ## Research
 A CSV file of the Iris data set was downloaded from UCI Machine Learning repository

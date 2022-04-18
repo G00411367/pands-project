@@ -26,12 +26,21 @@ print(df.shape)
 # counts number of each veriety 
 print(df['variety'].value_counts())
 
+# output a summary of the variables to a file
+# use flot format to show only 3 decimals
+description = df.describe()
+summary = description.to_csv('./data/summary.csv', float_format='%.3f', sep='\t')
+
+# check for missing values on the dataset
+print(df.isnull().sum())
+
 # create dadaframes for each of variety and print to check resluts
 setosa = df.loc[df['variety'] == 'Iris-setosa']
-print(setosa)
+# print(setosa)
 versicolor = df.loc[df['variety'] == 'Iris-versicolor']
-print(versicolor)
+# print(versicolor)
 virginica = df.loc[df['variety'] == 'Iris-virginica']
-print(virginica)
+# print(virginica)
+
 
 

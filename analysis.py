@@ -72,4 +72,19 @@ plt.savefig('./plots/hist.png')
 plt.clf()
 # plt.show()
 
+# scatter plot Sepal length vs width
+sns.scatterplot(x='sepallength', y='sepalwidth', hue ='variety', data=df )
+plt.savefig('./plots/scattersepal.png')
+plt.clf()
+# scatter plot Petal length vs width
+sns.scatterplot(x='petallength', y='petalwidth', hue ='variety', data=df )
+plt.savefig('./plots/scatterpetal.png')
+plt.clf()
+# plt.show()
+
+# pair plot of dataset with density along diagonal
+sns.pairplot(df, hue = 'variety', height=2)
+plt.savefig('./plots/scatterplot.png')
+plt.clf()
+
 

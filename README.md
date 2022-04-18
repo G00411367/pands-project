@@ -40,21 +40,32 @@ The code will output:
 
     ```
     Output 
-	        sepallength	sepalwidth	petallength	petalwidth
-        count	150.000	150.000	    150.000	    150.000
-        mean	5.843	3.054	    3.759	    1.199
-        std	    0.828	0.434	    1.764	    0.763
-        min	    4.300	2.000	    1.000	    0.100
-        25%	    5.100	2.800	    1.600	    0.300
-        50%	    5.800	3.000	    4.350	    1.300
-        75%	    6.400	3.300	    5.100	    1.800
-        max	    7.900	4.400	    6.900	    2.500
+
+	See Summary.png
     Analysis
         - Mean lenghts are greater then mean widths for both sepals & petals
         - Spread is largest in petal length
         - Max values for sepals are about 40% bigger than min & around double for petals
 
-        
+- Hitograms are ploted individually and grouped together for analysis
+   ```
+    fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+    axes[0,0].set_title('Sepal Length')
+    axes[0,0].hist(df['sepallength'])
+    axes[0,1].set_title('Sepal Width')
+    axes[0,1].hist(df['sepalwidth'])
+    axes[1,0].set_title('Petal Length')
+    axes[1,0].hist(df['petallength'])
+    axes[1,1].set_title('Petal Width')
+    axes[1,1].hist(df['petalwidth'])
+    plt.savefig('./plots/hist.png')
+  ```
+    Analysis
+         - The highest frequency of the sepal length is between 30 and 35 which is between 5.5 and 6
+        - The highest frequency of the sepal Width is around 70 which is between 3.0 and 3.5
+        - The highest frequency of the petal length is around 50 which is between 1 and 2
+        - The highest frequency of the petal width is between 40 and 50 which is between 0.0 and 0.5
+
 ## Research
 A CSV file of the Iris data set was downloaded from UCI Machine Learning repository
 

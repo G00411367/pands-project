@@ -34,42 +34,34 @@ summary = description.to_csv('./data/summary.csv', float_format='%.3f', sep='\t'
 # check for missing values on the dataset
 print(df.isnull().sum())
 
+# create dadaframes for each of variety and print to check resluts
+setosa = df.loc[df['variety'] == 'Iris-setosa']
+# print(setosa)
+versicolor = df.loc[df['variety'] == 'Iris-versicolor']
+# print(versicolor)
+virginica = df.loc[df['variety'] == 'Iris-virginica']
+# print(virginica)
+
 # histograms
 plt.hist(df['sepallength'])
 plt.title('Sepal Length')
 plt.savefig('./plots/histSepallength.png')
-plt.clf() # clear current figure
+# plt.show()
 
-plt.hist(df['sepalwidth'])
-plt.title('Sepal Width')
-plt.savefig('./plots/histSepalwidth.png')
-plt.clf()
-
-plt.hist(df['petallength'])
-plt.title('Petal Length')
-plt.savefig('./plots/histPetallength.png')
-plt.clf()
-
-plt.hist(df['petalwidth'])
-plt.title('Petal Width')
-plt.savefig('./plots/histPetalwidth.png')
-plt.clf()
-
-# histograms grouped in one figure
+# histograms grouped in one file
 fig, axes = plt.subplots(2, 2, figsize=(10, 10))
 axes[0,0].set_title('Sepal Length')
-axes[0,0].hist(df['sepallength'])
+axes[0,0].hist(df['sepallength'], edgecolor="red", bins=7)
 
 axes[0,1].set_title('Sepal Width')
-axes[0,1].hist(df['sepalwidth'])
+axes[0,1].hist(df['sepalwidth'], edgecolor="red", bins=7)
 
 axes[1,0].set_title('Petal Length')
-axes[1,0].hist(df['petallength'])
+axes[1,0].hist(df['petallength'], edgecolor="red", bins=7)
 
 axes[1,1].set_title('Petal Width')
-axes[1,1].hist(df['petalwidth'])
+axes[1,1].hist(df['petalwidth'], edgecolor="red", bins=7)
 plt.savefig('./plots/hist.png')
-plt.clf()
 # plt.show()
 
 

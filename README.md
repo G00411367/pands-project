@@ -29,11 +29,32 @@ The code will output:
         - File doesn't have a header
         - Add names for columns & check dataframe shape. It is as expected 150 rows & 5 colums
         - Check the number of entries for each variety. Result shows same number for each specie, 50
-    - We check this to understand the data set is ballanced 
+    - We are checking this to understand if the data set is ballanced 
 - Perform a statistical summary of the data set & output it to a file
     - Pandas describe() function shows counts, mean, standard deviation, min, max, etc
-    - Check against missing values o the data set by using isnull() function
+    - Check against missing values in data set by using isnull() function
 
+    ```
+    description = df.describe()
+    summary = description.to_csv('./data/summary.csv', float_format='%.3f', sep='\t')
+
+    ```
+    Output 
+	        sepallength	sepalwidth	petallength	petalwidth
+        count	150.000	150.000	    150.000	    150.000
+        mean	5.843	3.054	    3.759	    1.199
+        std	    0.828	0.434	    1.764	    0.763
+        min	    4.300	2.000	    1.000	    0.100
+        25%	    5.100	2.800	    1.600	    0.300
+        50%	    5.800	3.000	    4.350	    1.300
+        75%	    6.400	3.300	    5.100	    1.800
+        max	    7.900	4.400	    6.900	    2.500
+    Analysis
+        - Mean lenghts are greater then mean widths for both sepals & petals
+        - Spread is largest in petal length
+        - Max values for sepals are about 40% bigger than min & around double for petals
+
+        
 ## Research
 A CSV file of the Iris data set was downloaded from UCI Machine Learning repository
 

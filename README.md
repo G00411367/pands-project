@@ -220,6 +220,34 @@ The code will output:
 	- Virginica has the highest Petals and average Sepals
 	
 	
+- Dist plot wth histograms
+    ```
+	# Dist plot with histograms  
+	plt.figure(figsize = (10,10))
+
+	plot=sns.FacetGrid(df, hue = 'variety')
+	plot.map(sns.distplot, 'sepallength').add_legend()
+	plt.savefig('./plots/distsepallength.png')
+
+	plot=sns.FacetGrid(df, hue = 'variety')
+	plot.map(sns.distplot, 'sepalwidth').add_legend()
+	plt.savefig('./plots/distsepalwidth.png')
+
+	plot=sns.FacetGrid(df, hue = 'variety')
+	plot.map(sns.distplot, 'petallength').add_legend()
+	plt.savefig('./plots/distpetallength.png')
+
+	plot=sns.FacetGrid(df, hue = 'variety')
+	plot.map(sns.distplot, 'petalwidth').add_legend()
+	plt.savefig('./plots/distpetalwidth.png')
+	
+    ```	
+	
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/distpetallength.png" width=25% height=25%> <img src = "https://github.com/G00411367/pands-project/blob/main/plots/distpetalwidth.png" width=25% height=25%>
+
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/distsepallength.png" width=25% height=25%> <img src = "https://github.com/G00411367/pands-project/blob/main/plots/distsepalwidth.png" width=25% height=25%>
+	
+	
 ## Research
 
 

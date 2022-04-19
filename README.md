@@ -69,20 +69,20 @@ The code will output:
    Output
 	(150, 5)
 	
- - Check the number of entries for each variety. Result shows same number for each specie, 50
- - We are checking this to understand if the data set is ballanced 
-       
-        ```
-       	# add names for columns
+- Check the number of entries for each variety. Result shows same number for each specie, 50
+- to understand data is ballanced
+	```
+	# counts number of each veriety
 	df['variety'].value_counts().to_csv('./data/counts.csv', sep ='\t')
 	```
-        Output
-    
-		variety
+   Output
+	variety
+	
 	Iris-setosa	50
+	
 	Iris-versicolor	50
+	
 	Iris-virginica	50
-
 
 - Perform a statistical summary of the data set & output it to a file
     - Pandas describe() function shows counts, mean, standard deviation, min, max, etc
@@ -95,13 +95,16 @@ The code will output:
     ```
     Output 
 
-	See Summary.png
+![image](https://user-images.githubusercontent.com/98125831/164041934-0bc05dd9-d8f9-4e1e-a569-23c6bbd43761.png)
+	
+	
     Analysis
-        - Mean lenghts are greater then mean widths for both sepals & petals
+        - Mean lenghts are greater than mean widths for both sepals & petals
         - Spread is largest in petal length
         - Max values for sepals are about 40% bigger than min & around double for petals
 
-- Hitograms are ploted individually and grouped together for analysis
+- Hitograms for Sepal length, Sepal width, Petal length and Petal width were ploted individually and saved in the plot folder
+- A matrix pf above histograms was ploted in one figure for an overall analysis
    ```
     fig, axes = plt.subplots(2, 2, figsize=(10, 10))
     axes[0,0].set_title('Sepal Length')
@@ -114,6 +117,10 @@ The code will output:
     axes[1,1].hist(df['petalwidth'])
     plt.savefig('./plots/hist.png')
   ```
+  Output 
+  
+  <
+  
     Analysis
          - The highest frequency of the sepal length is between 30 and 35 which is between 5.5 and 6
         - The highest frequency of the sepal Width is around 70 which is between 3.0 and 3.5

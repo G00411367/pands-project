@@ -117,9 +117,9 @@ The code will output:
     axes[1,1].hist(df['petalwidth'])
     plt.savefig('./plots/hist.png')
   ```
-  Output 
-  
-  <
+  	Output 
+	  
+  <img src = "https://github.com/G00411367/pands-project/blob/main/plots/hist.png" width=50% height=50%>
   
     Analysis
          - The highest frequency of the sepal length is between 30 and 35 which is between 5.5 and 6

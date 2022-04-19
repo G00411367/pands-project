@@ -1,9 +1,11 @@
-# Pands Project
-Author: Ioan Domsa
+# Pands Project - Fisher's Iris data set
+Author: Ioan Domsa 
+
+Date : April 2022
 
 Programing and Scripting 2022
 
-## Fisher's Iris data set, backgroud
+## Backgroud
 
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in 1936 as an example of linear discriminant analysis. 
 
@@ -21,18 +23,20 @@ Four features were measured from each sample: the length and the width of the se
 
 Based on the combination of these features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
-
-## The Project
-
 Fisher’s analysis investigated if petal / sepal measurements alone could predict which species of Iris the sample came from (Fisher, 1936). 
 
 This project uses the version of the Iris data hosted at UCI machine learning repository.
 
 The project will investigate Fisher's Iris data set and performs analysis using a python scripts.
 
-It will perform Exploratory Data Analysis and visual technique.
 
-The project starts with statistical summary analysis using python libraries assessing counts, mean, min, max, etc. and will move to data visualisation.
+## Objectives
+
+The project will perform Exploratory Data Analysis and visual technique to investigate how measurements of petal or sepals can be used to predict Iris variety 
+
+It starts with statistical summary analysis using python libraries. Is assesses the counts, mean, min, max, etc. 
+
+Next, the project moves into data visualisation
 
 The code will output:
 1. A summary of each variable to a single text file 
@@ -40,7 +44,18 @@ The code will output:
 3. Scatter plots of each pair of variables
 4. Performs other appropriate analysis
 
-## The Code: analysis.py
+## Project folders and files
+
+1. data 	- contains the data file used for analysis. The folder also contains resuslts files after running the script, e.g. summary.csv
+3. images 	- images of the Iris speies 
+4. plots 	- plots results of the analysis 
+5. test		- test code samples
+
+   Readme.md
+
+   analysis.py 
+   
+## Python Code : analysis.py
 
 - Load data from cvs file which is specified with path & name
 - Manipulation of data set  
@@ -86,11 +101,6 @@ The code will output:
         - The highest frequency of the petal width is between 40 and 50 which is between 0.0 and 0.5
 
 ## Research
-A CSV file of the Iris data set was downloaded from UCI Machine Learning repository
-
-Data set contains 150 records under 5 atributes: Sepal Length, Sepal Width, Petal Length, Petal width and Species
-
-Various analisys were performed and developed in order to distinquish between species
 
 
 ## ** References **

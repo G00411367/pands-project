@@ -144,7 +144,7 @@ The code will output:
 	Outpout
 <img src = "https://github.com/G00411367/pands-project/blob/main/plots/scattersepal.png" width=35% height=35%> <img src = "https://github.com/G00411367/pands-project/blob/main/plots/scatterpetal.png" width=35% height=35%>
   
-- A paiplot matrix of scatter plots with density along diagonal was ploted for comparison analysis
+- A pair plot matrix of scatter plots with density along diagonal was ploted for comparison analysis
 
   ```
 	# pair plot of dataset with density along diagonal
@@ -156,7 +156,12 @@ The code will output:
 	Output
 <img src = "https://github.com/G00411367/pands-project/blob/main/plots/scatterplot.png" width=75% height=75%>
 
-
+    Analysis
+        - One can see many tipes of relationships
+	- Three clusters wihh Petal dimension. 
+        - Setosa has the smallest Petal width and no overlap with other species. It also has the smallest sepal length
+        - There is some overlap on Petal dimensiomn between Versicolor and Virginica
+	
 ## Research
 
 

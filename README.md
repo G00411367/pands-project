@@ -173,12 +173,51 @@ The code will output:
 	plt.savefig('./plots/heatmap.png')
 	plt.clf()
    ```
-  
-  	Output
+    	Output
 	
 <img src = "https://github.com/G00411367/pands-project/blob/main/plots/heatmap.png" width=50% height=50%>
 
+	Analysis
+    
+        - Petal width and Petal length have high correlations
+	- Petal width and Sepal length have high correlations
+	- Petal length and Sepal length have high correlations
+       
+
+- Box plot, matrix
+
+   ```
+  	# box plot. Matrix
+	# define a function to graph each of the 4 features
+	def graph(feature):
+    	    sns.boxplot(x = 'variety', y=feature, data = df)
+	plt.figure(figsize = (10,10))
+
+	plt.subplot(221)
+	graph('sepallength')
+
+	plt.subplot(222)
+	graph('sepalwidth')
+
+	plt.subplot(223)
+	graph('petallength')
+
+	plt.subplot(224)
+	graph('petalwidth')
+	plt.savefig('./plots/boxplot.png')
+	plt.clf()
+   ```
+    	
+	Output
+
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/boxplot.png" width=50% height=50%>
 	
+	
+	Analysis
+    
+        - Petal width and Petal length have high correlations
+	- Petal width and Sepal length have high correlations
+	- Petal length and Sepal length have high correlations
 	
 	
 ## Research

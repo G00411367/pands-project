@@ -104,7 +104,7 @@ The code will output:
         - Max values for sepals are about 40% bigger than min & around double for petals
 
 - Hitograms for Sepal length, Sepal width, Petal length and Petal width were ploted individually and saved in the plot folder
-- A matrix pf above histograms was ploted in one figure for an overall analysis
+- A matrix of above histograms was ploted in one figure for an overall analysis
    ```
     fig, axes = plt.subplots(2, 2, figsize=(10, 10))
     axes[0,0].set_title('Sepal Length')
@@ -118,14 +118,44 @@ The code will output:
     plt.savefig('./plots/hist.png')
   ```
   	Output 
-	  
+
   <img src = "https://github.com/G00411367/pands-project/blob/main/plots/hist.png" width=50% height=50%>
   
-    Analysis
-         - The highest frequency of the sepal length is between 30 and 35 which is between 5.5 and 6
-        - The highest frequency of the sepal Width is around 70 which is between 3.0 and 3.5
-        - The highest frequency of the petal length is around 50 which is between 1 and 2
-        - The highest frequency of the petal width is between 40 and 50 which is between 0.0 and 0.5
+    Analysis: the following shows how sepal and petal measurements are distributed
+          
+         - The highest frequency of the sepal length is between 20 and 30 which is between 5.5 and 6
+         - The highest frequency of the sepal width is around 35 which is between 3.0 and 3.5
+         - The highest frequency of the petal length is around 40 which is between 1 and 2
+         - The highest frequency of the petal width is around 40 which is between 0.0 and 0.5
+      
+- Scatter plots for sepal and petal length vs width are saved in the plot folder
+  ```
+ 	 # scatter plot Sepal length vs width
+	sns.scatterplot(x='sepallength', y='sepalwidth', hue ='variety', data=df )
+	plt.savefig('./plots/scattersepal.png')
+	plt.clf()
+
+	# scatter plot Pepal length vs widt
+	sns.scatterplot(x='petallength', y='petalwidth', hue ='variety', data=df )
+	plt.savefig('./plots/scatterpetal.png')
+	plt.clf()
+  ```
+	
+	Outpout
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/scattersepal.png" width=35% height=35%> <img src = "https://github.com/G00411367/pands-project/blob/main/plots/scatterpetal.png" width=35% height=35%>
+  
+- A paiplot matrix of scatter plots with density along diagonal was ploted for comparison analysis
+
+  ```
+	# pair plot of dataset with density along diagonal
+	sns.pairplot(df, hue = 'variety', height=2)
+	plt.savefig('./plots/scatterplot.png')
+	plt.clf()
+   ```
+
+	Output
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/scatterplot.png" width=75% height=75%>
+
 
 ## Research
 

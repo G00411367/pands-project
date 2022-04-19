@@ -157,10 +157,29 @@ The code will output:
 <img src = "https://github.com/G00411367/pands-project/blob/main/plots/scatterplot.png" width=75% height=75%>
 
     Analysis
+    
         - One can see many tipes of relationships
-	- Three clusters wihh Petal dimension. 
+	- Three clusters wihh Petal dimension
         - Setosa has the smallest Petal width and no overlap with other species. It also has the smallest sepal length
         - There is some overlap on Petal dimensiomn between Versicolor and Virginica
+	
+- Heat map, data corelation
+
+   ```
+  	# data corelation & heat map
+	print(df.corr())
+	fig, axes = plt.subplots(figsize = (6,6))
+	sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+	plt.savefig('./plots/heatmap.png')
+	plt.clf()
+   ```
+  
+  	Output
+	
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/heatmap.png" width=50% height=50%>
+
+	
+	
 	
 ## Research
 

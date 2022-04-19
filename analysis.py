@@ -20,8 +20,6 @@ irisfile = datapath + 'iris.data.csv'
 df = pd.read_csv(irisfile, header=None)
 # add names for columns
 df.columns = ['sepallength', 'sepalwidth', 'petallength', 'petalwidth', 'variety']
-# test file loading
-# print (df.head()) 
 # check file shape, number of rows and columns
 print(df.shape) 
 
@@ -73,11 +71,12 @@ plt.savefig('./plots/hist.png')
 plt.clf()
 # plt.show()
 
-# scatter plots Sepal and Petal length vs width
+# scatter plot Sepal length vs width
 sns.scatterplot(x='sepallength', y='sepalwidth', hue ='variety', data=df )
 plt.savefig('./plots/scattersepal.png')
 plt.clf()
 
+# scatter plot Pepal length vs widt
 sns.scatterplot(x='petallength', y='petalwidth', hue ='variety', data=df )
 plt.savefig('./plots/scatterpetal.png')
 plt.clf()

@@ -95,7 +95,7 @@ The code will output:
     ```
     Output 
 
-![image](https://user-images.githubusercontent.com/98125831/164041934-0bc05dd9-d8f9-4e1e-a569-23c6bbd43761.png)
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/Summary.png" width=50% height=50%>
 	
 	
     Analysis

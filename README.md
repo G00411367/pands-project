@@ -210,14 +210,14 @@ The code will output:
     	
 	Output
 
-<img src = "https://github.com/G00411367/pands-project/blob/main/plots/boxplot.png" width=50% height=50%>
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/boxplot.png" width=75% height=75%>
 	
 	
 	Analysis
     
-        - Petal width and Petal length have high correlations
-	- Petal width and Sepal length have high correlations
-	- Petal length and Sepal length have high correlations
+        - Setosa has the smallest Petals but the widest Sepals
+	- Versicolor has average features
+	- Virginica has the highest Petals and average Sepals
 	
 	
 ## Research

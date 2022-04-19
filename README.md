@@ -67,6 +67,7 @@ The code will output:
 	print(df.shape) 
 	```
    Output
+   
 	(150, 5)
 	
 - Check the number of entries for each variety. Result shows same number for each specie, 50
@@ -76,6 +77,7 @@ The code will output:
 	df['variety'].value_counts().to_csv('./data/counts.csv', sep ='\t')
 	```
    Output
+   
 	variety
 	
 	Iris-setosa	50
@@ -172,10 +174,11 @@ The code will output:
 	sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
 	plt.savefig('./plots/heatmap.png')
 	plt.clf()
-   ```
-    	Output
+    ```
+   
+    Output
 	
-<img src = "https://github.com/G00411367/pands-project/blob/main/plots/heatmap.png" width=50% height=50%>
+<img src = "https://github.com/G00411367/pands-project/blob/main/plots/heatmap.png" width=35% height=35%>
 
 	Analysis
     
@@ -219,6 +222,7 @@ The code will output:
 	- Versicolor has average features
 	- Virginica has the highest Petals and average Sepals
 	
+	- We notice the presence of some outliners in the data set 
 	
 - Dist plot wth histograms
     ```
@@ -242,13 +246,25 @@ The code will output:
 	plt.savefig('./plots/distpetalwidth.png')
 	
     ```	
+	Output
 	
 <img src = "https://github.com/G00411367/pands-project/blob/main/plots/distpetallength.png" width=25% height=25%> <img src = "https://github.com/G00411367/pands-project/blob/main/plots/distpetalwidth.png" width=25% height=25%>
 
 <img src = "https://github.com/G00411367/pands-project/blob/main/plots/distsepallength.png" width=25% height=25%> <img src = "https://github.com/G00411367/pands-project/blob/main/plots/distsepalwidth.png" width=25% height=25%>
 	
+	 Analysis
+	 
+	 - Petal length and width has no overlapping
+	 - Sepal lenght and width has large amount of onerlapping
 	
-## Research
+	  	
+## Conclusions
+  - Irish setosa is clearly distinctive from the other two species. If has wide sepals but short and narrow petals
+  - Iris Virginica and Versicolor overlaps hugely in Sepal dimensions but less in Petal measurements.
+  - Iris Virginica is more likely to have wider and larger Petals
+
+  - Outliners showed on box plots may indicate poor sample representation or some measurement errors  
+
 
 
 ## ** References **
@@ -267,4 +283,3 @@ The code will output:
 
 (https://m.youtube.com/watch?v=8yXpWGRBXjE)
 
-()

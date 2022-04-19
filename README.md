@@ -7,26 +7,37 @@ Programing and Scripting 2022
 
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in 1936 as an example of linear discriminant analysis. 
 
-The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris Virginica and Iris Versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters.S
+The data set consists of 50 samples from each of three species of Iris: Setosa, Virginica and Versicolor).
 
 Following images are the flowering Iris Setosa, Iris Virginica and iris Versicolor:
 
 <img src = "https://github.com/G00411367/pands-project/blob/main/images/Iris%20variety.png" width=50% height=50%>
 
-The petals are the inner flower while the sepals protect the emerging flower on the outer part of the plant 
+The petals are the inner flower while the sepals protect the emerging flower on the outer part of the plant. 
+
+Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters.
 
 <img src = "https://github.com/G00411367/pands-project/blob/main/images/Iris.png" width=20% height=20%>
 
-Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
+Based on the combination of these features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
 
 ## The Project
-This project will investigate the Fisher's Iris data set and performs analysis using a python script
+
+Fisher’s analysis investigated if petal / sepal measurements alone could predict which species of Iris the sample came from (Fisher, 1936). 
+
+This project uses the version of the Iris data hosted at UCI machine learning repository.
+
+The project will investigate Fisher's Iris data set and performs analysis using a python scripts.
+
+It will perform Exploratory Data Analysis and visual technique.
+
+The project starts with statistical summary analysis using python libraries assessing counts, mean, min, max, etc. and will move to data visualisation.
 
 The code will output:
 1. A summary of each variable to a single text file 
-2. Histogram of each variable saved to png files
-3. Scatter plot of each pair of variables
+2. Histograms of each variable saved to png files
+3. Scatter plots of each pair of variables
 4. Performs other appropriate analysis
 
 ## The Code: analysis.py

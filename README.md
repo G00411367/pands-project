@@ -57,13 +57,33 @@ The code will output:
    
 ## Python Code : analysis.py
 
-- Load data from cvs file which is specified with path & name
-- Manipulation of data set  
-    - After viewing the initial dataframe of the file, some data manipulation will be applied:
-        - File doesn't have a header
-        - Add names for columns & check dataframe shape. It is as expected 150 rows & 5 colums
-        - Check the number of entries for each variety. Result shows same number for each specie, 50
-    - We are checking this to understand if the data set is ballanced 
+- Load data from cvs file, specified with path & name
+- Manipulation of data set: added names for columns
+- Check dataframe shape. It is expected 150 rows & 5 colums
+	```
+	# add names for columns
+	df.columns = ['sepallength', 'sepalwidth', 'petallength', 'petalwidth', 'variety']
+	# check file shape, number of rows and columns
+	print(df.shape) 
+	```
+   Output
+	(150, 5)
+	
+ - Check the number of entries for each variety. Result shows same number for each specie, 50
+ - We are checking this to understand if the data set is ballanced 
+       
+        ```
+       	# add names for columns
+	df['variety'].value_counts().to_csv('./data/counts.csv', sep ='\t')
+	```
+        Output
+    
+		variety
+	Iris-setosa	50
+	Iris-versicolor	50
+	Iris-virginica	50
+
+
 - Perform a statistical summary of the data set & output it to a file
     - Pandas describe() function shows counts, mean, standard deviation, min, max, etc
     - Check against missing values in data set by using isnull() function
